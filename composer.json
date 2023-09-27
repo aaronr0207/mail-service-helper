@@ -1,0 +1,18 @@
+{
+    "name": "aaronr0207/mail-service-helper",
+    "description": "Helper para enviar correos electrónicos haciendo uso de un microservicio externo a través de GuzzleHttp",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aaronr0207\\MailServiceHelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aarón Romero"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
