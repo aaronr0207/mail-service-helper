@@ -16,8 +16,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "guzzlehttp/guzzle": "^6.3",
-        "illuminate/support": "5.8.*",
-        "illuminate/view": "5.8.*"
+        "guzzlehttp/guzzle": "^7.8",
+        "illuminate/support": "^10.25",
+        "illuminate/view": "^10.25"
     }
 }
