@@ -2,7 +2,7 @@
     "name": "aaronr0207/mail-service-helper",
     "description": "Helper para enviar correos electrónicos haciendo uso de un microservicio externo a través de GuzzleHttp",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.5.8",
     "license": "MIT",
     "autoload": {
         "psr-4": {
