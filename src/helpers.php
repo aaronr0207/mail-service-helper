@@ -40,11 +40,11 @@ if (! function_exists('send_mail')) {
         ];
         $datos[] = [
             'name' => 'api_caller',
-            'contents' => 'ourense'
+            'contents' => env('MAIL_SERVICE_API_CALLER','default')
         ];
         $datos[] = [
             'name' => 'instance_caller',
-            'contents' => 'ourense'
+            'contents' => env('MAIL_SERVICE_INSTANCE','default')
         ];
 
 
