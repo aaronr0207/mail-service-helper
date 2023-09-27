@@ -19,5 +19,12 @@
         "guzzlehttp/guzzle": "^7.8",
         "illuminate/support": "^10.25",
         "illuminate/view": "^10.25"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aaronr0207\\MailServiceHelper\\MailServiceHelperServiceProvider"
+            ]
+        }
     }
 }
