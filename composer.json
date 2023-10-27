@@ -17,8 +17,8 @@
     "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^7.8",
-        "illuminate/support": "^10.25",
-        "illuminate/view": "^10.25"
+        "illuminate/support": "^8.0",
+        "illuminate/view": "^8.0"
     },
     "extra": {
         "laravel": {
