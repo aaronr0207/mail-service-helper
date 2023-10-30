@@ -27,6 +27,10 @@ if (! function_exists('send_mail')) {
             'contents' => $email['emisor']
         ];
         $datos[] = [
+            'name' => 'sender_name',
+            'contents' => $email['nombre_emisor']
+        ];
+        $datos[] = [
             'name' => 'recipients',
             'contents' => json_encode($email['receptores'])
         ];
