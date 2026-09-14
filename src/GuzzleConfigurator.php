@@ -14,7 +14,7 @@ class GuzzleConfigurator
         $handlerStack->push(Middleware::retry(function($retry, $request, $response, $exception) {
             // Si la respuesta es 429, entonces reintenta
             if ($response && $response->getStatusCode() === 429) {
-                sleep( env('MAIL_SERVICE_URI',3)); // esperar X segundos
+                sleep((int) env('MAIL_SERVICE_RETRY_SECS', 3)); // esperar X segundos
                 return true;
             }
             return false;

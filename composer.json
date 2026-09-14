@@ -2,7 +2,7 @@
     "name": "aaronr0207/mail-service-helper",
     "description": "Helper para enviar correos electrónicos haciendo uso de un microservicio externo a través de GuzzleHttp",
     "type": "library",
-    "version": "1.14.0",
+    "version": "1.16.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -17,8 +17,8 @@
     "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^7.9",
-        "illuminate/support": "^11 || ^12.0",
-        "illuminate/view": "^11 || ^12.0",
+        "illuminate/support": "^11 || ^12.0 || ^13.0",
+        "illuminate/view": "^11 || ^12.0 || ^13.0",
         "symfony/mailer": "^7.2",
         "symfony/mime": "^7.2"
     },

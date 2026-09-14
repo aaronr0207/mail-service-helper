@@ -66,6 +66,18 @@ class LapsoMailTransport implements TransportInterface
             ]
         ];
 
+        foreach ($message->getAttachments() as $attachment) {
+            if ('inline' === $attachment->getDisposition()) {
+                continue;
+            }
+
+            $data[] = [
+                'name' => 'archivos[]',
+                'contents' => $attachment->getBody(),
+                'filename' => $attachment->getFilename() ?? 'archivo',
+            ];
+        }
+
         \Log::info('LapsoMailTransport: About to send email', [
             'sender' => $sender,
             'subject' => $message->getSubject(),
