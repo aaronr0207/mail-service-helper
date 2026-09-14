@@ -18,7 +18,7 @@ class LapsoMailTransport implements TransportInterface
         $this->configurator = new GuzzleConfigurator();
     }
 
-    public function send(RawMessage $message, Envelope $envelope = null): ?SentMessage
+    public function send(RawMessage $message, ?Envelope $envelope = null): ?SentMessage
     {
         if (!$message instanceof Email) {
             throw new \InvalidArgumentException('LapsoMailTransport only supports Email messages.');
